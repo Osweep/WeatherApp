@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
             mBtn1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), Cirrocumulus.class);
+                    Intent intent = new Intent(getApplicationContext(), Cirrus.class);
                     startActivity(intent);
                 }
             });
@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
             mBtn2.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), Cirrus.class);
+                    Intent intent = new Intent(getApplicationContext(), Cirrocumulus.class);
                     startActivity(intent);
                 }
             });

@@ -17,11 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cirrocumulus"
-                  android:label="Cirrocumulus">
+                  android:label="Cirrocumulus (Cc)">
 
         </activity>
         <activity android:name=".Cirrus"
-                  android:label="Cirrus">
+                  android:label="Cirrus (Ci)">
 
         </activity>
 
