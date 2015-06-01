@@ -1,40 +1,22 @@
 package org.example.android.practicalweatherapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-
-public class MainActivity extends ActionBarActivity {
-
-    private Button mBtn1, mBtn2;
+/**
+ * Created by Hoyin on 6/1/2015.
+ */
+public class Cirrocumulus extends ActionBarActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.selection_view);
+        setContentView(R.layout.cirros_view);
 
-        mBtn1 = (Button) findViewById(R.id.btn_cirru);
-            mBtn1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), Cirrocumulus.class);
-                    startActivity(intent);
-                }
-            });
-        mBtn2 = (Button) findViewById(R.id.btn_cirro);
-            mBtn2.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), Cirrus.class);
-                    startActivity(intent);
-                }
-            });
+
     }
 
     @Override
@@ -58,4 +40,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
