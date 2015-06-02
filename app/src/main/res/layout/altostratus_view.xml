@@ -1,0 +1,324 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/secondView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtitle_altos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Normal base heights (in temperate regions): 8.000 - 16.000 ft"
+                android:textColor="@color/bigTitle"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"/>
+
+
+            <ImageView
+                android:id="@+id/altos_img1"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/subtitle_altos"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/altostratus_translucidus1"/>
+
+            <TextView
+                android:id="@+id/altos_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_img1"
+                android:text="Altostratus Translucidus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/altos_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_below="@+id/altos_desc1"
+                android:paddingLeft="-17dp"
+                android:layout_column="0"
+                android:src="@drawable/altostratus_opacus"/>
+
+            <TextView
+                android:id="@+id/altos_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_img2"
+                android:text="Altostratus Opacus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/altos_img3"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/altos_desc2"
+                android:layout_column="0"
+                android:src="@drawable/altostratus_translucidus2"/>
+
+            <TextView
+                android:id="@+id/altos_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_img3"
+                android:text="Altostratus Translucidus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondView"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/subtitle_altos_charac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_altos"
+                android:layout_column="1"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:text="Characteristics"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/altos_charac_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_altos_charac"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:text="- Greyish/bluish, mostly in one layer"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/altos_charac_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_charac_item"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:text="- smooth sheet, with uniform appearance, sometimes striated or fibrous"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/altos_charac_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_charac_item2"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:text="- sky mostly covered to overcast often 6/8-8/8"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/altos_charac_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_charac_item3"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:text="- vague sun, as if observed through ground glass, sun having blurry outlines"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/altos_charac_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_charac_item4"
+                android:layout_toRightOf="@+id/altos_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- Sometimes confused with Ci, Cs, Ac, Sc, Ns,St"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/altos_precip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/altos_img3"
+                android:layout_toRightOf="@+id/altos_img3"
+                android:paddingLeft="8dp"
+                android:text="Precipitation"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_precip"
+                android:layout_toRightOf="@+id/altos_img3"
+                android:paddingLeft="8dp"
+                android:text="- mostly light rain or snow may occur"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_precip"
+                android:layout_toRightOf="@+id/altos_img3"
+                android:paddingLeft="8dp"
+                android:text="- in winter or early spring, freezing rain or ice pellets may occur"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/altos_atn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_desc3"
+                android:paddingTop="5dp"
+                android:text="At Night"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="15dp"
+                android:text="Moon Present"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:text="- thin aS: moon weak, hardly visible"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:text="- thick As: moon invisible"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="15dp"
+                android:text="Moon Absent"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- mostly cloudy/overcast \n stars/planets invisible"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- partly cloudy \n some stars/planets visible"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/altos_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_atn"
+                android:paddingTop="5dp"
+                android:text="Origin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/altos_origin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_origin"
+                android:paddingTop="3dp"
+                android:text="- lifting of air on a large scale, approaching warm front or slowly moving cold front"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/altos_aviation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_origin5"
+                android:paddingTop="10dp"
+                android:text="Aviation issues"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/altos_aviation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_aviation"
+                android:text="- Moderate to severe icing!"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/altos_aviation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/altos_aviation"
+                android:text="- Marginal to poor visibility during precipitation"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

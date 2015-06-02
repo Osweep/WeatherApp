@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button mBtn1, mBtn2;
+    private Button mBtnCirrus, mBtn2Cirro, mBtn3Altos;
 
 
     @Override
@@ -19,22 +19,31 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.selection_view);
 
-        mBtn1 = (Button) findViewById(R.id.btn_cirru);
-            mBtn1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), Cirrus.class);
-                    startActivity(intent);
-                }
-            });
-        mBtn2 = (Button) findViewById(R.id.btn_cirro);
-            mBtn2.setOnClickListener(new View.OnClickListener(){
+        mBtnCirrus = (Button) findViewById(R.id.btn_cirru);
+        mBtnCirrus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Cirrus.class);
+                startActivity(intent);
+            }
+        });
+        mBtn2Cirro = (Button) findViewById(R.id.btn_cirro);
+        mBtn2Cirro.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getApplicationContext(), Cirrocumulus.class);
                     startActivity(intent);
                 }
             });
+
+        mBtn3Altos = (Button) findViewById(R.id.btn_altos);
+        mBtn3Altos.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Altostratus.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

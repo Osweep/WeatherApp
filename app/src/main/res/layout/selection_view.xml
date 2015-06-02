@@ -6,17 +6,29 @@
               android:orientation="vertical">
 
     <Button
-        android:id="@+id/btn_cirru"
+        android:id="@+id/btn_altos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:text="Cirrus"/>
+        android:text="Altostratus"/>
 
     <Button
         android:id="@+id/btn_cirro"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:padding="10dp"
         android:text="Cirrocumulus"/>
+
+    <Button
+        android:id="@+id/btn_cirru"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Cirrus"/>
+
+
+
+
 
 </LinearLayout>
