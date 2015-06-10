@@ -1,0 +1,323 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/secondView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtitle_cumulus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_cumulus"
+                android:paddingBottom="10dp"
+                android:text="Normal base heights (in temperate regions): 800 to 4000 ft, in summer sometimes 5000-8000 ft"
+                android:textColor="@color/bigTitle"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"/>
+
+
+            <ImageView
+                android:id="@+id/cumulus_img1"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/subtitle_cumulus"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/Cumulus_mediocris"/>
+
+            <TextView
+                android:id="@+id/cumulus_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_img1"
+                android:text="Cumulus mediocriss"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/cumulus_img2"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cumulus_desc1"
+                android:layout_column="0"
+                android:src="@drawable/Cumulus_congestus1"/>
+
+            <TextView
+                android:id="@+id/cumulus_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_img2"
+                android:text="Cumulus congestus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/cumulus_img3"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cumulus_desc2"
+                android:layout_column="0"
+                android:src="@drawable/Cumulus_congestus2"/>
+
+            <TextView
+                android:id="@+id/cumulus_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_img3"
+                android:text="Cumulus congestus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondView"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/subtitle_cumulus_charac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cumulus"
+                android:layout_column="1"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="Characteristics"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cumulus_charac"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="- individual bulging clouds (cauliflower- or cotton-like)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_charac_item"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="- sharp contours, even at tops"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_charac_item2"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="- dark grey/grey base"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_charac_item3"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="- small size (tufted) to very large (Cb)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_charac_item4"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- transformation into vertical direction possible (Cb)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_charac_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_charac_item4"
+                android:layout_toRightOf="@+id/cumulus_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- surface visibility usually good to very good (10 km or more)Sometimes confused with Ac, Sc, As, Ns, Cb, St"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_precip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cumulus_img3"
+                android:layout_toRightOf="@+id/cumulus_img3"
+                android:paddingLeft="8dp"
+                android:text="Precipitation"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_precip"
+                android:layout_toRightOf="@+id/cumulus_img3"
+                android:paddingLeft="8dp"
+                android:text="- Only TCU: sometimes occasional drops of rain or snowflakes"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/cumulus_atn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_desc3"
+                android:paddingTop="5dp"
+                android:text="At Night"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="15dp"
+                android:text="Moon Present"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:text="- Moon visible in between"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="15dp"
+                android:text="Moon Absent"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- stars seem ‘to switch on and off’ (as in Ac, Sc)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_atn"
+                android:paddingTop="5dp"
+                android:text="Origin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/cumulus_origin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_origin"
+                android:paddingTop="3dp"
+                android:text="- convection by heating of surface (unstable air mass)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_origin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_origin1"
+                android:text="- lifting Stratus, often in the morning"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_origin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_origin2"
+                android:text="- base gradually rises during the day (if heating of surface is  sufficient)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_aviation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_origin5"
+                android:paddingTop="10dp"
+                android:text="Aviation issues"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cumulus_aviation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_aviation"
+                android:text="- light icing may occur in tops of TCU "
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cumulus_aviation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cumulus_aviation"
+                android:text="- turbulence (moderate to severe in/near TCU)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
