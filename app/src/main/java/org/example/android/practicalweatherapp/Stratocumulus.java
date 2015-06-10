@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 /**
- * Created by Tobias on 10-6-2015.A ASDF
+ * Created by Tobias on 10-6-2015.A ASDFasdf
  */
 public class Stratocumulus extends ActionBarActivity {
     @Override
