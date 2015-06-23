@@ -34,8 +34,37 @@
             android:parentActivityName=".MainActivity">
 
         </activity>
+        <activity
+            android:name=".Cirrostratus"
+            android:label="Cirrostratus (As)"
+            android:parentActivityName=".MainActivity">
 
+        </activity>
 
+        <activity
+            android:name=".Temperature"
+            android:label="Temperature (As)"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".WeatherMapSymbols"
+            android:label="WeatherMapSymbols (As)"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".Cumulus"
+            android:label="Cumulus (As)"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".Stratocumulus"
+            android:label="Stratocumulus (As)"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

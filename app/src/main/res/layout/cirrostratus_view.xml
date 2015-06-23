@@ -1,0 +1,298 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/secondView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtitle_cirrostratus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_cirrostratus"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="Normal base heights \n(in temperate regions): \n 16.000 - 25.000 ft"
+                android:textColor="@color/bigTitle"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"/>
+
+
+            <ImageView
+                android:id="@+id/cirrostratus_img1"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/subtitle_cirrostratus"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cirrostratus_cirrus"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirro_img1"
+                android:text="Cirrostratus (under)"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/cirrostratus_img2"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cirro_desc1"
+                android:layout_column="0"
+                android:src="@drawable/cirrostratus_nebulosus"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirro_img2"
+                android:text="Cirrostratus nebulosus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/cirrostratus_img3"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cirrostratus_desc3"
+                android:layout_column="0"
+                android:src="@drawable/cirrostratus_with_halo"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_img3"
+                android:text="Cirrostratus with halo"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondView"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/subtitle_cirrostratus_charac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cirrostratus"
+                android:layout_column="1"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:text="Characteristics"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_charac_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cirrostratus_charac"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:text="- white, milky, translucent or transparant appaerance"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_charac_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_charac_item"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:text="- Tiny elements, in the shape of grains, ribs"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_charac_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_charac_item2"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:text="- hardly any / no texture, at times a little fibrous"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_charac_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_charac_item3"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- sky mostly covered or overcast"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_charac_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_charac_item4"
+                android:layout_toRightOf="@+id/cirrostratus_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- often optical phenomena may occur(halos, sundogs, etc)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/cirrostratus_atn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_desc3"
+                android:paddingTop="5dp"
+                android:text="At Night"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="15dp"
+                android:text="Moon Present"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="- milky veil, possibly halo visible \n -stars/planets hardly visible"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="15dp"
+                android:text="Moon Absent"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="- stars more or less dimmed"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/cirrostratus_precip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cirrostratus_img3"
+                android:layout_toRightOf="@+id/cirrostratus_img3"
+                android:paddingLeft="8dp"
+                android:text="Precipitation"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_precip"
+                android:layout_toRightOf="@+id/cirrostratus_img3"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- None"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Origin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/cirrostratus_origin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_origin"
+                android:paddingTop="3dp"
+                android:text="- lifting of air on a large scale at higher levels /n
+                (approaching warm front or slowly moving cold front)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_origin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_origin1"
+                android:text="- presence of jet stream"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/cirrostratus_aviation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_origin2"
+                android:paddingTop="10dp"
+                android:text="Aviation issues"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cirrostratus_aviation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrostratus_aviation"
+                android:text="- persistent contrails, possibly high level turbulence"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

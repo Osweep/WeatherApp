@@ -28,7 +28,35 @@
         android:text="Cirrus"/>
 
 
+    <Button
+        android:id="@+id/btn_cirrostratus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Cirrostratus"/>
 
-
-
+    <Button
+        android:id="@+id/btn_wms"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="WeatherMapSymbols"/>
+    <Button
+        android:id="@+id/btn_temp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Temperatures"/>
+    <Button
+        android:id="@+id/btn_cum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Cumulus"/>
+    <Button
+        android:id="@+id/btn_strcum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Stratocumulus"/>
 </LinearLayout>
