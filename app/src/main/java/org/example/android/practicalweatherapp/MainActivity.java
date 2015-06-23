@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button mBtnCirrus, mBtn2Cirro, mBtn3Altos;
+    private Button mBtnCirrus, mBtn2Cirro, mBtn3Altos, mBtn4Cirrostratus, mBtn5WMS, mBtn6TEMP, mBtn7Cumulus, mBtn8StrCumulus;
 
 
     @Override
@@ -44,6 +44,51 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+
+        mBtn4Cirrostratus = (Button) findViewById(R.id.btn_cirrostratus);
+        mBtn4Cirrostratus.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Cirrostratus.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtn5WMS = (Button) findViewById(R.id.btn_wms);
+        mBtn5WMS.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), WeatherMapSymbols.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtn6TEMP = (Button) findViewById(R.id.btn_temp);
+        mBtn6TEMP.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Temperature.class);
+                startActivity(intent);
+            }
+        });
+        mBtn7Cumulus = (Button) findViewById(R.id.btn_cum);
+        mBtn7Cumulus.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Cumulus.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtn8StrCumulus = (Button) findViewById(R.id.btn_strcum);
+        mBtn8StrCumulus.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Stratocumulus.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
