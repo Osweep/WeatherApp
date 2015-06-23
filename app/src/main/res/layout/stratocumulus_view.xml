@@ -1,0 +1,357 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/secondView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtitle_stratocumulus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_stratocumulus"
+                android:paddingBottom="10dp"
+                android:text="Normal base heights (in temperate regions): 1.200 - 6.000 ft"
+                android:textColor="@color/bigTitle"
+                android:textSize="12sp"
+                android:textStyle="italic|bold"/>
+
+
+            <ImageView
+                android:id="@+id/stratocumulus_img1"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/subtitle_stratocumulus"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/Stratocumulus_cumulogenitus"/>
+
+            <TextView
+                android:id="@+id/cirrus_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stratocumulus_img1"
+                android:text="Stratocumulus cumulogenitus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/stratocumulus_img2"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cirrus_desc1"
+                android:layout_column="0"
+                android:src="@drawable/Stratocumulus_opacus"/>
+
+            <TextView
+                android:id="@+id/cirrus_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_img2"
+                android:text="Stratocumulus opacus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/stratocumulus_img3"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cirrus_desc2"
+                android:layout_column="0"
+                android:src="@drawable/Stratocumulus_translucidus"/>
+
+            <TextView
+                android:id="@+id/cirrus_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_img3"
+                android:text="Stratocumulus translucidus"
+                android:textColor="@color/textColor"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/secondView"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/subtitle_cirrus_charac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cirrus"
+                android:layout_column="1"
+                android:layout_toRightOf="@+id/stratocumulus_img1"
+                android:paddingLeft="8dp"
+                android:text="Characteristics"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cirrus_charac_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_cirrus_charac"
+                android:layout_toRightOf="@+id/cirrus_img1"
+                android:paddingLeft="8dp"
+                android:text="- grey or white, with partly dark areas
+  elements clearly identifiable
+"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_charac_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_charac_item"
+                android:layout_toRightOf="@+id/cirrus_img1"
+                android:paddingLeft="8dp"
+                android:text="- white and fibrous or thready, individual \n or in narrow bands"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_charac_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_charac_item2"
+                android:layout_toRightOf="@+id/cirrus_img1"
+                android:paddingLeft="8dp"
+                android:text="- tile-like, or composed of balls, rollers etc."
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_charac_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_charac_item3"
+                android:layout_toRightOf="@+id/cirrus_img1"
+                android:paddingLeft="8dp"
+                android:text="- element size 3 or more fingers wide (arm stretched)"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_charac_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_charac_item4"
+                android:layout_toRightOf="@+id/cirrus_img1"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:text="- tops normally flat, locally bulging
+Sometimes confused with Cs, Ac, As, Ns, St, Cu
+"
+                android:textColor="@color/textColor"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_precip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cirrus_img3"
+                android:layout_toRightOf="@+id/cirrus_img3"
+                android:paddingLeft="8dp"
+                android:text="Precipitation"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_precip"
+                android:layout_toRightOf="@+id/cirrus_img3"
+                android:paddingLeft="8dp"
+                android:text="- sometimes light rain or snow, snow grains may occur"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/cirrus_atn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_desc3"
+                android:paddingTop="5dp"
+                android:text="At Night"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="15dp"
+                android:text="Moon Present"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:text="- moon hidden at intervals, visible through thinner
+   edges.
+"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="10dp"
+                android:text="- moon invisible due to thick, solid layers "
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="15dp"
+                android:text="Moon Absent"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- stars sometimes appear (also in Ac, Cu)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- stars invisible due to thick solid layers"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:paddingLeft="10dp"
+                android:text="- lower Sc can be lit up by urban lighting."
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_atn"
+                android:paddingTop="5dp"
+                android:text="Origin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/cirrus_origin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_origin"
+                android:paddingTop="3dp"
+                android:text="- spreading of Cumulus"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_origin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_origin1"
+                android:text="- convection below inversion (in/near center/ridge of high pressure)"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_origin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_origin2"
+                android:text="- Dissolution of frontal clouds ('Fibratus', 'Spissatus')"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_origin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_origin3"
+                android:text="- lifting or transformation of Stratus, due to convection or
+  undulating movements
+"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_aviation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_origin5"
+                android:paddingTop="10dp"
+                android:text="Aviation issues"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"/>
+
+            <TextView
+            android:id="@+id/cirrus_aviation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cirrus_aviation"
+            android:text="- moderate to severe icing (mainly in 'old' maritime Sc)"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/cirrus_aviation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cirrus_aviation"
+                android:text="- sometimes moderate to severe turbulence in/near
+  surrounded/embedded CB and/or TCU
+"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
